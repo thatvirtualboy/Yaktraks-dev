@@ -26,7 +26,7 @@ struct ContentView: View {
     let generator = UINotificationFeedbackGenerator()
     @State private var CompletePlayer: AVAudioPlayer?
     
-    // Clock Settings
+    // Clock Settings//
     @State var timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     @State var counter: Int = 0
     @State var countTo: Int = 6
