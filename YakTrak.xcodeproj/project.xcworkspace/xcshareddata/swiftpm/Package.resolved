@@ -1,0 +1,33 @@
+{
+  "originHash" : "acfb6cced8426e817b40a6da83dd2fd925f21fc90b2496b0a5491f23ac59c1d7",
+  "pins" : [
+    {
+      "identity" : "lottie-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/airbnb/lottie-ios",
+      "state" : {
+        "revision" : "b4bd0604ded9574807f41b4004b57dd1226a30a4",
+        "version" : "3.5.0"
+      }
+    },
+    {
+      "identity" : "swiftsdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/TelemetryDeck/SwiftSDK",
+      "state" : {
+        "revision" : "a7fd1eb469589a3c8fd8cc3abe19b092b5d674dc",
+        "version" : "2.9.4"
+      }
+    },
+    {
+      "identity" : "wkview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/rebeloper/WKView.git",
+      "state" : {
+        "revision" : "b9314678cf946e8c02ae1dcaf4e07d6c9dd7712c",
+        "version" : "0.1.6"
+      }
+    }
+  ],
+  "version" : 3
+}

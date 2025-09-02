@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		692629D926CEFBA3000EA616 /* VoiceRecorderAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692629D826CEFBA3000EA616 /* VoiceRecorderAppApp.swift */; };
+		692629DB26CEFBA3000EA616 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692629DA26CEFBA3000EA616 /* ContentView.swift */; };
+		692629DD26CEFBA5000EA616 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 692629DC26CEFBA5000EA616 /* Assets.xcassets */; };
+		692629E026CEFBA5000EA616 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 692629DF26CEFBA5000EA616 /* Preview Assets.xcassets */; };
+		692629E826CEFBC8000EA616 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692629E726CEFBC8000EA616 /* AudioRecorder.swift */; };
+		692629EA26CEFD30000EA616 /* RecordingsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692629E926CEFD30000EA616 /* RecordingsListView.swift */; };
+		692629EC26CEFECD000EA616 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692629EB26CEFECD000EA616 /* Extensions.swift */; };
+		692629EE26CEFF9F000EA616 /* RecordingDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692629ED26CEFF9F000EA616 /* RecordingDataModel.swift */; };
+		692629F026CF0079000EA616 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692629EF26CF0079000EA616 /* Helper.swift */; };
+		692629F226CF04CA000EA616 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692629F126CF04CA000EA616 /* AudioPlayer.swift */; };
+		692629F826CFEE91000EA616 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692629F726CFEE91000EA616 /* SettingsView.swift */; };
+		692ED3F326D953F3008D636F /* astroblue.json in Resources */ = {isa = PBXBuildFile; fileRef = 692ED3F026D953F3008D636F /* astroblue.json */; };
+		692ED3F426D953F3008D636F /* astropurple.json in Resources */ = {isa = PBXBuildFile; fileRef = 692ED3F126D953F3008D636F /* astropurple.json */; };
+		692ED3F526D953F3008D636F /* astroyellow.json in Resources */ = {isa = PBXBuildFile; fileRef = 692ED3F226D953F3008D636F /* astroyellow.json */; };
+		692ED3F726D95A6C008D636F /* IconsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692ED3F626D95A6C008D636F /* IconsView.swift */; };
+		692ED3F926DAD7F0008D636F /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692ED3F826DAD7F0008D636F /* Clock.swift */; };
+		692ED3FB26DD7AA2008D636F /* GateScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692ED3FA26DD7AA2008D636F /* GateScreen.swift */; };
+		693E575026E701F10063CCDE /* arrowyellow.json in Resources */ = {isa = PBXBuildFile; fileRef = 693E574F26E701F10063CCDE /* arrowyellow.json */; };
+		693E575226E7BA180063CCDE /* GrownUpSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693E575126E7BA180063CCDE /* GrownUpSettings.swift */; };
+		693E575526E7BE9A0063CCDE /* WKView in Frameworks */ = {isa = PBXBuildFile; productRef = 693E575426E7BE9A0063CCDE /* WKView */; };
+		693E575726E7BF3C0063CCDE /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693E575626E7BF3C0063CCDE /* Utilities.swift */; };
+		693E575926E7BF580063CCDE /* DeviceTypeMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693E575826E7BF580063CCDE /* DeviceTypeMap.swift */; };
+		693E575B26E7C2610063CCDE /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693E575A26E7C2610063CCDE /* About.swift */; };
+		694558CB26DDBE6A000B187A /* error.json in Resources */ = {isa = PBXBuildFile; fileRef = 694558C926DDBE6A000B187A /* error.json */; };
+		694558CC26DDBE6A000B187A /* check.json in Resources */ = {isa = PBXBuildFile; fileRef = 694558CA26DDBE6A000B187A /* check.json */; };
+		697D64C826D3088E00C0B802 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D64C726D3088E00C0B802 /* MainView.swift */; };
+		697D64CB26D3F89600C0B802 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 697D64CA26D3F89600C0B802 /* Lottie */; };
+		697D64CD26D3F8C100C0B802 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D64CC26D3F8C100C0B802 /* LottieView.swift */; };
+		697D64D126D3F8FB00C0B802 /* RecordingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D64D026D3F8FB00C0B802 /* RecordingsView.swift */; };
+		697D64D326D3FA7E00C0B802 /* dots.json in Resources */ = {isa = PBXBuildFile; fileRef = 697D64D226D3FA7E00C0B802 /* dots.json */; };
+		697D64D626D412B900C0B802 /* button.json in Resources */ = {isa = PBXBuildFile; fileRef = 697D64D526D412B900C0B802 /* button.json */; };
+		697D64DD26D4184700C0B802 /* audiopurple.json in Resources */ = {isa = PBXBuildFile; fileRef = 697D64D726D4184700C0B802 /* audiopurple.json */; };
+		697D64DE26D4184700C0B802 /* audioblue.json in Resources */ = {isa = PBXBuildFile; fileRef = 697D64D826D4184700C0B802 /* audioblue.json */; };
+		697D64DF26D4184700C0B802 /* audiopink.json in Resources */ = {isa = PBXBuildFile; fileRef = 697D64D926D4184700C0B802 /* audiopink.json */; };
+		697D64E026D4184700C0B802 /* audiogreen.json in Resources */ = {isa = PBXBuildFile; fileRef = 697D64DA26D4184700C0B802 /* audiogreen.json */; };
+		697D64E126D4184700C0B802 /* audiored.json in Resources */ = {isa = PBXBuildFile; fileRef = 697D64DB26D4184700C0B802 /* audiored.json */; };
+		697D64E226D4184700C0B802 /* audioyellow.json in Resources */ = {isa = PBXBuildFile; fileRef = 697D64DC26D4184700C0B802 /* audioyellow.json */; };
+		697D64E426D41A4B00C0B802 /* bolt.json in Resources */ = {isa = PBXBuildFile; fileRef = 697D64E326D41A4B00C0B802 /* bolt.json */; };
+		697D64F926D42BE500C0B802 /* astro.json in Resources */ = {isa = PBXBuildFile; fileRef = 697D64F826D42BE500C0B802 /* astro.json */; };
+		697D64FB26D44E1F00C0B802 /* BungeeInline-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 697D64FA26D44E1F00C0B802 /* BungeeInline-Regular.ttf */; };
+		69CED00226DFEC5A003F785D /* WhatsNewHighlightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CED00126DFEC5A003F785D /* WhatsNewHighlightView.swift */; };
+		69CED00726E10D03003F785D /* confetti.json in Resources */ = {isa = PBXBuildFile; fileRef = 69CED00626E10D03003F785D /* confetti.json */; };
+		69D8445226D803D60098F2A7 /* ProFeaturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D8445126D803D60098F2A7 /* ProFeaturesView.swift */; };
+		69D8445626D81D5E0098F2A7 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D8445526D81D5E0098F2A7 /* StoreManager.swift */; };
+		69D8445926D826060098F2A7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69D8445826D826060098F2A7 /* StoreKit.framework */; };
+		A8429B0E26EFADF30005FBD1 /* PrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8429B0D26EFADF30005FBD1 /* PrivacyView.swift */; };
+		A8429B1026F0F2CF0005FBD1 /* ReviewPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8429B0F26F0F2CF0005FBD1 /* ReviewPrompt.swift */; };
+		A88160B02E652CCB00F0BAD1 /* TelemetryDeck in Frameworks */ = {isa = PBXBuildFile; productRef = A88160AF2E652CCB00F0BAD1 /* TelemetryDeck */; };
+		A8FC01EB26FCDAB700CB0969 /* button4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A8FC01EA26FCDAB700CB0969 /* button4.mp3 */; };
+		A8FC01ED26FCDB8300CB0969 /* swoosh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A8FC01EC26FCDB8300CB0969 /* swoosh.mp3 */; };
+		A8FC01F126FCE0DA00CB0969 /* rockon.wav in Resources */ = {isa = PBXBuildFile; fileRef = A8FC01F026FCE0DA00CB0969 /* rockon.wav */; };
+		A8FC01F326FCE82B00CB0969 /* unlocked.wav in Resources */ = {isa = PBXBuildFile; fileRef = A8FC01F226FCE82B00CB0969 /* unlocked.wav */; };
+		A8FC01F526FCE8C000CB0969 /* click.wav in Resources */ = {isa = PBXBuildFile; fileRef = A8FC01F426FCE8C000CB0969 /* click.wav */; };
+		A8FC01F726FCF1B900CB0969 /* start.wav in Resources */ = {isa = PBXBuildFile; fileRef = A8FC01F626FCF1B900CB0969 /* start.wav */; };
+		A8FC01F926FCF47900CB0969 /* error.wav in Resources */ = {isa = PBXBuildFile; fileRef = A8FC01F826FCF47900CB0969 /* error.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		692629D526CEFBA3000EA616 /* YakTrak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YakTrak.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		692629D826CEFBA3000EA616 /* VoiceRecorderAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRecorderAppApp.swift; sourceTree = "<group>"; };
+		692629DA26CEFBA3000EA616 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		692629DC26CEFBA5000EA616 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		692629DF26CEFBA5000EA616 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		692629E126CEFBA5000EA616 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		692629E726CEFBC8000EA616 /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
+		692629E926CEFD30000EA616 /* RecordingsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingsListView.swift; sourceTree = "<group>"; };
+		692629EB26CEFECD000EA616 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		692629ED26CEFF9F000EA616 /* RecordingDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingDataModel.swift; sourceTree = "<group>"; };
+		692629EF26CF0079000EA616 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		692629F126CF04CA000EA616 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		692629F726CFEE91000EA616 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		69295E9D26D932FB006355D6 /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
+		692ED3F026D953F3008D636F /* astroblue.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = astroblue.json; sourceTree = "<group>"; };
+		692ED3F126D953F3008D636F /* astropurple.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = astropurple.json; sourceTree = "<group>"; };
+		692ED3F226D953F3008D636F /* astroyellow.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = astroyellow.json; sourceTree = "<group>"; };
+		692ED3F626D95A6C008D636F /* IconsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconsView.swift; sourceTree = "<group>"; };
+		692ED3F826DAD7F0008D636F /* Clock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clock.swift; sourceTree = "<group>"; };
+		692ED3FA26DD7AA2008D636F /* GateScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GateScreen.swift; sourceTree = "<group>"; };
+		693E574F26E701F10063CCDE /* arrowyellow.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = arrowyellow.json; sourceTree = "<group>"; };
+		693E575126E7BA180063CCDE /* GrownUpSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrownUpSettings.swift; sourceTree = "<group>"; };
+		693E575626E7BF3C0063CCDE /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		693E575826E7BF580063CCDE /* DeviceTypeMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTypeMap.swift; sourceTree = "<group>"; };
+		693E575A26E7C2610063CCDE /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
+		694558C926DDBE6A000B187A /* error.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = error.json; sourceTree = "<group>"; };
+		694558CA26DDBE6A000B187A /* check.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = check.json; sourceTree = "<group>"; };
+		697D64C726D3088E00C0B802 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		697D64CC26D3F8C100C0B802 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		697D64D026D3F8FB00C0B802 /* RecordingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingsView.swift; sourceTree = "<group>"; };
+		697D64D226D3FA7E00C0B802 /* dots.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dots.json; sourceTree = "<group>"; };
+		697D64D526D412B900C0B802 /* button.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = button.json; sourceTree = "<group>"; };
+		697D64D726D4184700C0B802 /* audiopurple.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = audiopurple.json; sourceTree = "<group>"; };
+		697D64D826D4184700C0B802 /* audioblue.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = audioblue.json; sourceTree = "<group>"; };
+		697D64D926D4184700C0B802 /* audiopink.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = audiopink.json; sourceTree = "<group>"; };
+		697D64DA26D4184700C0B802 /* audiogreen.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = audiogreen.json; sourceTree = "<group>"; };
+		697D64DB26D4184700C0B802 /* audiored.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = audiored.json; sourceTree = "<group>"; };
+		697D64DC26D4184700C0B802 /* audioyellow.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = audioyellow.json; sourceTree = "<group>"; };
+		697D64E326D41A4B00C0B802 /* bolt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bolt.json; sourceTree = "<group>"; };
+		697D64F826D42BE500C0B802 /* astro.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = astro.json; sourceTree = "<group>"; };
+		697D64FA26D44E1F00C0B802 /* BungeeInline-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BungeeInline-Regular.ttf"; sourceTree = "<group>"; };
+		69CED00126DFEC5A003F785D /* WhatsNewHighlightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsNewHighlightView.swift; sourceTree = "<group>"; };
+		69CED00326E03086003F785D /* YakTrak.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = YakTrak.entitlements; sourceTree = "<group>"; };
+		69CED00626E10D03003F785D /* confetti.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = confetti.json; sourceTree = "<group>"; };
+		69D8445126D803D60098F2A7 /* ProFeaturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProFeaturesView.swift; sourceTree = "<group>"; };
+		69D8445526D81D5E0098F2A7 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
+		69D8445826D826060098F2A7 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		A8429B0D26EFADF30005FBD1 /* PrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyView.swift; sourceTree = "<group>"; };
+		A8429B0F26F0F2CF0005FBD1 /* ReviewPrompt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewPrompt.swift; sourceTree = "<group>"; };
+		A8FC01EA26FCDAB700CB0969 /* button4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = button4.mp3; sourceTree = "<group>"; };
+		A8FC01EC26FCDB8300CB0969 /* swoosh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = swoosh.mp3; sourceTree = "<group>"; };
+		A8FC01F026FCE0DA00CB0969 /* rockon.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rockon.wav; sourceTree = "<group>"; };
+		A8FC01F226FCE82B00CB0969 /* unlocked.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = unlocked.wav; sourceTree = "<group>"; };
+		A8FC01F426FCE8C000CB0969 /* click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = click.wav; sourceTree = "<group>"; };
+		A8FC01F626FCF1B900CB0969 /* start.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = start.wav; sourceTree = "<group>"; };
+		A8FC01F826FCF47900CB0969 /* error.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = error.wav; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		692629D226CEFBA3000EA616 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				697D64CB26D3F89600C0B802 /* Lottie in Frameworks */,
+				69D8445926D826060098F2A7 /* StoreKit.framework in Frameworks */,
+				693E575526E7BE9A0063CCDE /* WKView in Frameworks */,
+				A88160B02E652CCB00F0BAD1 /* TelemetryDeck in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		692629CC26CEFBA3000EA616 = {
+			isa = PBXGroup;
+			children = (
+				69295E9D26D932FB006355D6 /* Configuration.storekit */,
+				69CED00326E03086003F785D /* YakTrak.entitlements */,
+				692629D726CEFBA3000EA616 /* VoiceRecorderApp */,
+				692629D626CEFBA3000EA616 /* Products */,
+				69D8445726D826060098F2A7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		692629D626CEFBA3000EA616 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				692629D526CEFBA3000EA616 /* YakTrak.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		692629D726CEFBA3000EA616 /* VoiceRecorderApp */ = {
+			isa = PBXGroup;
+			children = (
+				692629D826CEFBA3000EA616 /* VoiceRecorderAppApp.swift */,
+				697D64C726D3088E00C0B802 /* MainView.swift */,
+				A8FC01EA26FCDAB700CB0969 /* button4.mp3 */,
+				A8FC01EC26FCDB8300CB0969 /* swoosh.mp3 */,
+				A8FC01F026FCE0DA00CB0969 /* rockon.wav */,
+				A8FC01F626FCF1B900CB0969 /* start.wav */,
+				A8FC01F826FCF47900CB0969 /* error.wav */,
+				A8FC01F426FCE8C000CB0969 /* click.wav */,
+				A8FC01F226FCE82B00CB0969 /* unlocked.wav */,
+				A8429B1126F0F2D60005FBD1 /* Utilities */,
+				697D64F326D4224700C0B802 /* Fonts */,
+				697D64D426D3FA8100C0B802 /* LottieFiles */,
+				692629DA26CEFBA3000EA616 /* ContentView.swift */,
+				697D64D026D3F8FB00C0B802 /* RecordingsView.swift */,
+				692629E926CEFD30000EA616 /* RecordingsListView.swift */,
+				692629ED26CEFF9F000EA616 /* RecordingDataModel.swift */,
+				69D8445126D803D60098F2A7 /* ProFeaturesView.swift */,
+				692ED3FA26DD7AA2008D636F /* GateScreen.swift */,
+				693E575126E7BA180063CCDE /* GrownUpSettings.swift */,
+				693E575A26E7C2610063CCDE /* About.swift */,
+				692629F726CFEE91000EA616 /* SettingsView.swift */,
+				A8429B0D26EFADF30005FBD1 /* PrivacyView.swift */,
+				692ED3F626D95A6C008D636F /* IconsView.swift */,
+				697D64CC26D3F8C100C0B802 /* LottieView.swift */,
+				69CED00126DFEC5A003F785D /* WhatsNewHighlightView.swift */,
+				692629DC26CEFBA5000EA616 /* Assets.xcassets */,
+				692629E126CEFBA5000EA616 /* Info.plist */,
+				692629DE26CEFBA5000EA616 /* Preview Content */,
+			);
+			path = VoiceRecorderApp;
+			sourceTree = "<group>";
+		};
+		692629DE26CEFBA5000EA616 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				692629DF26CEFBA5000EA616 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		697D64D426D3FA8100C0B802 /* LottieFiles */ = {
+			isa = PBXGroup;
+			children = (
+				69CED00626E10D03003F785D /* confetti.json */,
+				694558CA26DDBE6A000B187A /* check.json */,
+				693E574F26E701F10063CCDE /* arrowyellow.json */,
+				694558C926DDBE6A000B187A /* error.json */,
+				697D64F826D42BE500C0B802 /* astro.json */,
+				692ED3F026D953F3008D636F /* astroblue.json */,
+				692ED3F126D953F3008D636F /* astropurple.json */,
+				692ED3F226D953F3008D636F /* astroyellow.json */,
+				697D64D226D3FA7E00C0B802 /* dots.json */,
+				697D64E326D41A4B00C0B802 /* bolt.json */,
+				697D64D526D412B900C0B802 /* button.json */,
+				697D64D826D4184700C0B802 /* audioblue.json */,
+				697D64DA26D4184700C0B802 /* audiogreen.json */,
+				697D64D926D4184700C0B802 /* audiopink.json */,
+				697D64D726D4184700C0B802 /* audiopurple.json */,
+				697D64DB26D4184700C0B802 /* audiored.json */,
+				697D64DC26D4184700C0B802 /* audioyellow.json */,
+			);
+			path = LottieFiles;
+			sourceTree = "<group>";
+		};
+		697D64F326D4224700C0B802 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				697D64FA26D44E1F00C0B802 /* BungeeInline-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		69D8445726D826060098F2A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69D8445826D826060098F2A7 /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A8429B1126F0F2D60005FBD1 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				693E575626E7BF3C0063CCDE /* Utilities.swift */,
+				692629EF26CF0079000EA616 /* Helper.swift */,
+				692629EB26CEFECD000EA616 /* Extensions.swift */,
+				69D8445526D81D5E0098F2A7 /* StoreManager.swift */,
+				A8429B0F26F0F2CF0005FBD1 /* ReviewPrompt.swift */,
+				692629F126CF04CA000EA616 /* AudioPlayer.swift */,
+				692629E726CEFBC8000EA616 /* AudioRecorder.swift */,
+				692ED3F826DAD7F0008D636F /* Clock.swift */,
+				693E575826E7BF580063CCDE /* DeviceTypeMap.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		692629D426CEFBA3000EA616 /* YakTrak */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 692629E426CEFBA5000EA616 /* Build configuration list for PBXNativeTarget "YakTrak" */;
+			buildPhases = (
+				692629D126CEFBA3000EA616 /* Sources */,
+				692629D226CEFBA3000EA616 /* Frameworks */,
+				692629D326CEFBA3000EA616 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YakTrak;
+			packageProductDependencies = (
+				697D64CA26D3F89600C0B802 /* Lottie */,
+				693E575426E7BE9A0063CCDE /* WKView */,
+				A88160AF2E652CCB00F0BAD1 /* TelemetryDeck */,
+			);
+			productName = VoiceRecorderApp;
+			productReference = 692629D526CEFBA3000EA616 /* YakTrak.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		692629CD26CEFBA3000EA616 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					692629D426CEFBA3000EA616 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 692629D026CEFBA3000EA616 /* Build configuration list for PBXProject "YakTrak" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 692629CC26CEFBA3000EA616;
+			packageReferences = (
+				697D64C926D3F89600C0B802 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				693E575326E7BE9A0063CCDE /* XCRemoteSwiftPackageReference "WKView" */,
+				A88160AE2E652CCB00F0BAD1 /* XCRemoteSwiftPackageReference "SwiftSDK" */,
+			);
+			productRefGroup = 692629D626CEFBA3000EA616 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				692629D426CEFBA3000EA616 /* YakTrak */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		692629D326CEFBA3000EA616 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				697D64F926D42BE500C0B802 /* astro.json in Resources */,
+				697D64E426D41A4B00C0B802 /* bolt.json in Resources */,
+				697D64DF26D4184700C0B802 /* audiopink.json in Resources */,
+				697D64DE26D4184700C0B802 /* audioblue.json in Resources */,
+				694558CC26DDBE6A000B187A /* check.json in Resources */,
+				A8FC01F926FCF47900CB0969 /* error.wav in Resources */,
+				A8FC01F126FCE0DA00CB0969 /* rockon.wav in Resources */,
+				692ED3F426D953F3008D636F /* astropurple.json in Resources */,
+				69CED00726E10D03003F785D /* confetti.json in Resources */,
+				697D64E026D4184700C0B802 /* audiogreen.json in Resources */,
+				692629E026CEFBA5000EA616 /* Preview Assets.xcassets in Resources */,
+				692ED3F326D953F3008D636F /* astroblue.json in Resources */,
+				697D64E226D4184700C0B802 /* audioyellow.json in Resources */,
+				693E575026E701F10063CCDE /* arrowyellow.json in Resources */,
+				A8FC01F326FCE82B00CB0969 /* unlocked.wav in Resources */,
+				694558CB26DDBE6A000B187A /* error.json in Resources */,
+				697D64DD26D4184700C0B802 /* audiopurple.json in Resources */,
+				A8FC01EB26FCDAB700CB0969 /* button4.mp3 in Resources */,
+				697D64D326D3FA7E00C0B802 /* dots.json in Resources */,
+				A8FC01ED26FCDB8300CB0969 /* swoosh.mp3 in Resources */,
+				697D64FB26D44E1F00C0B802 /* BungeeInline-Regular.ttf in Resources */,
+				697D64E126D4184700C0B802 /* audiored.json in Resources */,
+				692629DD26CEFBA5000EA616 /* Assets.xcassets in Resources */,
+				A8FC01F526FCE8C000CB0969 /* click.wav in Resources */,
+				697D64D626D412B900C0B802 /* button.json in Resources */,
+				692ED3F526D953F3008D636F /* astroyellow.json in Resources */,
+				A8FC01F726FCF1B900CB0969 /* start.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		692629D126CEFBA3000EA616 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				692629EC26CEFECD000EA616 /* Extensions.swift in Sources */,
+				69D8445626D81D5E0098F2A7 /* StoreManager.swift in Sources */,
+				692ED3F926DAD7F0008D636F /* Clock.swift in Sources */,
+				697D64C826D3088E00C0B802 /* MainView.swift in Sources */,
+				692629F026CF0079000EA616 /* Helper.swift in Sources */,
+				692629E826CEFBC8000EA616 /* AudioRecorder.swift in Sources */,
+				693E575226E7BA180063CCDE /* GrownUpSettings.swift in Sources */,
+				692629F226CF04CA000EA616 /* AudioPlayer.swift in Sources */,
+				693E575726E7BF3C0063CCDE /* Utilities.swift in Sources */,
+				A8429B1026F0F2CF0005FBD1 /* ReviewPrompt.swift in Sources */,
+				692629DB26CEFBA3000EA616 /* ContentView.swift in Sources */,
+				69CED00226DFEC5A003F785D /* WhatsNewHighlightView.swift in Sources */,
+				A8429B0E26EFADF30005FBD1 /* PrivacyView.swift in Sources */,
+				69D8445226D803D60098F2A7 /* ProFeaturesView.swift in Sources */,
+				692629EE26CEFF9F000EA616 /* RecordingDataModel.swift in Sources */,
+				693E575926E7BF580063CCDE /* DeviceTypeMap.swift in Sources */,
+				697D64CD26D3F8C100C0B802 /* LottieView.swift in Sources */,
+				692629EA26CEFD30000EA616 /* RecordingsListView.swift in Sources */,
+				693E575B26E7C2610063CCDE /* About.swift in Sources */,
+				692ED3FB26DD7AA2008D636F /* GateScreen.swift in Sources */,
+				692629D926CEFBA3000EA616 /* VoiceRecorderAppApp.swift in Sources */,
+				692ED3F726D95A6C008D636F /* IconsView.swift in Sources */,
+				692629F826CFEE91000EA616 /* SettingsView.swift in Sources */,
+				697D64D126D3F8FB00C0B802 /* RecordingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		692629E226CEFBA5000EA616 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 62X8RDXJ3W;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		692629E326CEFBA5000EA616 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 62X8RDXJ3W;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		692629E526CEFBA5000EA616 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "AppIcon_pinklines,AppIcon_greenlines,AppIcon_facecolors,AppIcon_pinkbolt,AppIcon_yaktraks,AppIcon_blueyak,AppIcon_djcolors,AppIcon_djdark,AppIcon_bluestar,AppIcon_pinkstar,AppIcon_greenstar";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_2.0v2;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = YakTrak.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"VoiceRecorderApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = VoiceRecorderApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = YakTraks;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thatvirtualboy.VoiceRecorderApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		692629E626CEFBA5000EA616 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "AppIcon_pinklines,AppIcon_greenlines,AppIcon_facecolors,AppIcon_pinkbolt,AppIcon_yaktraks,AppIcon_blueyak,AppIcon_djcolors,AppIcon_djdark,AppIcon_bluestar,AppIcon_pinkstar,AppIcon_greenstar";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_2.0v2;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = YakTrak.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"VoiceRecorderApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = VoiceRecorderApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = YakTraks;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thatvirtualboy.VoiceRecorderApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		692629D026CEFBA3000EA616 /* Build configuration list for PBXProject "YakTrak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				692629E226CEFBA5000EA616 /* Debug */,
+				692629E326CEFBA5000EA616 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		692629E426CEFBA5000EA616 /* Build configuration list for PBXNativeTarget "YakTrak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				692629E526CEFBA5000EA616 /* Debug */,
+				692629E626CEFBA5000EA616 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		693E575326E7BE9A0063CCDE /* XCRemoteSwiftPackageReference "WKView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rebeloper/WKView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.6;
+			};
+		};
+		697D64C926D3F89600C0B802 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.3;
+			};
+		};
+		A88160AE2E652CCB00F0BAD1 /* XCRemoteSwiftPackageReference "SwiftSDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TelemetryDeck/SwiftSDK";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.9.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		693E575426E7BE9A0063CCDE /* WKView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 693E575326E7BE9A0063CCDE /* XCRemoteSwiftPackageReference "WKView" */;
+			productName = WKView;
+		};
+		697D64CA26D3F89600C0B802 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 697D64C926D3F89600C0B802 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		A88160AF2E652CCB00F0BAD1 /* TelemetryDeck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A88160AE2E652CCB00F0BAD1 /* XCRemoteSwiftPackageReference "SwiftSDK" */;
+			productName = TelemetryDeck;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 692629CD26CEFBA3000EA616 /* Project object */;
+}
