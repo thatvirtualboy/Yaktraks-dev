@@ -35,9 +35,9 @@ struct IconsView: View {
                     Spacer()
                     Button(action: {
                         if soundSetting { PlayButton() }
-                        UIApplication.shared.setAlternateIconName(nil)
-                        TelemetryManager.send("ChangedIcon",
-                                              with: ["Icon" : "Default"])
+                        UIApplication.shared.setAlternateIconName("AppIcon_yellowbolt")
+                        TelemetryDeck.signal("ChangedIcon",
+                                             parameters: ["Icon" : "Default"])
                     }){
                         Image("icon")
                             .resizable()
@@ -48,9 +48,9 @@ struct IconsView: View {
                     
                     Button(action: {
                         if soundSetting { PlayButton() }
-                        UIApplication.shared.setAlternateIconName("AppIcon_2.0v2")
-                        TelemetryManager.send("ChangedIcon",
-                                              with: ["Icon" : "2 point Oh v2"])
+                        UIApplication.shared.setAlternateIconName(nil)
+                        TelemetryDeck.signal("ChangedIcon",
+                                             parameters: ["Icon" : "2 point Oh v2"])
                     }){
                         Image("alternate_2.0v2")
                             .resizable()
@@ -62,8 +62,8 @@ struct IconsView: View {
                     Button(action: {
                         if soundSetting { PlayButton() }
                         UIApplication.shared.setAlternateIconName("AppIcon_yaktraks")
-                        TelemetryManager.send("ChangedIcon",
-                                              with: ["Icon" : "Yak Traks"])
+                        TelemetryDeck.signal("ChangedIcon",
+                                             parameters: ["Icon" : "Yak Traks"])
                     }){
                         Image("alternate_yaktraks")
                             .resizable()
@@ -98,8 +98,8 @@ struct IconsView: View {
                         Button(action: {
                             if soundSetting { PlayButton() }
                             UIApplication.shared.setAlternateIconName("AppIcon_pinkstar")
-                            TelemetryManager.send("ChangedIcon",
-                                                  with: ["Icon" : "Pink Star"])
+                            TelemetryDeck.signal("ChangedIcon",
+                                                 parameters: ["Icon" : "Pink Star"])
                         }){
                             Image("alternate_pinkstar")
                                 .resizable()
@@ -111,8 +111,8 @@ struct IconsView: View {
                         Button(action: {
                             if soundSetting { PlayButton() }
                             UIApplication.shared.setAlternateIconName("AppIcon_greenstar")
-                            TelemetryManager.send("ChangedIcon",
-                                                  with: ["Icon" : "Green Star"])
+                            TelemetryDeck.signal("ChangedIcon",
+                                                 parameters: ["Icon" : "Green Star"])
                         }){
                             Image("alternate_greenstar")
                                 .resizable()

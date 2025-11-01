@@ -21,7 +21,12 @@ struct RecordingsListView: View {
         List {
             ForEach (audioRecorder.recordings, id: \.fileURL) { recording in
                 RecordingRow(audioURL: recording.fileURL)
-                    .swipeActions(edge: .trailing, allowsFullSwipe: false) {
+                    .swipeActions(edge: .trailing, allowsFullSwipe: true) {
+                        Button(role: .destructive) {
+                            deleteSingle(for: recording.fileURL)
+                        } label: {
+                            Label("Delete", systemImage: "trash")
+                        }
                         Button("Rename") {
                             beginRename(for: recording.fileURL)
                         }.tint(.blue)
@@ -29,6 +34,9 @@ struct RecordingsListView: View {
                     .contextMenu {
                         Button(action: { beginRename(for: recording.fileURL) }) {
                             Label("Rename", systemImage: "pencil")
+                        }
+                        Button(role: .destructive, action: { deleteSingle(for: recording.fileURL) }) {
+                            Label("Delete", systemImage: "trash")
                         }
                     }
             }
@@ -88,6 +96,12 @@ struct RecordingsListView: View {
         }
         audioRecorder.deleteRecording(urlsToDelete: urlsToDelete)
         saveOrder()
+    }
+    
+    private func deleteSingle(for url: URL) {
+        if let idx = audioRecorder.recordings.firstIndex(where: { $0.fileURL == url }) {
+            delete(at: IndexSet(integer: idx))
+        }
     }
 
     private func beginRename(for url: URL) {
